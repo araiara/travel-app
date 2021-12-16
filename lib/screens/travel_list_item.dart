@@ -21,20 +21,23 @@ class TravelListItem extends StatelessWidget {
             ))
           );
         },
-        child: Column(
-          children: [
-            Image.network(
-              travel.imageUrl,
-              height: 140,
-            ),
-            Text(travel.name,
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.w300,
-                fontSize: 14
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10.0),
+          child: Column(
+            children: [
+              Image.network(
+                travel.imageUrl,
+                height: 150,
               ),
-            ),
-          ],
+              Text(travel.name,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );                  
